@@ -9,13 +9,13 @@ pipeline {
                 echo 'checked git version'
             }
         }
-stage('test') {
+    stage('test') {
             steps {
                 echo 'I am in test phase'
                 sh 'docker --version'
             }
         }
-stage('prod') {
+    stage('prod') {
             steps {
                 echo 'I am in prod phase'
                 sh 'mvn -v'
